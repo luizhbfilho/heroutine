@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "502218887859",
+    "project_id": "heroutine",
+    "storage_bucket": "heroutine.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502218887859:android:34d1b20d9b735a374816c6",
+        "android_client_info": {
+          "package_name": "com.luizhbfilho.heroutine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502218887859-upo0f74197n6ls0gv33hncbkj7ee97m0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3aHt48PlBXiqq8xpA03wpCjCj2VCM-Ik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502218887859-upo0f74197n6ls0gv33hncbkj7ee97m0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
