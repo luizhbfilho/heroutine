@@ -1,4 +1,7 @@
 package com.luizhbfilho.heroutine.core.model
 
-class MealDomain {
+data class MealDomain(
+    val name: String = "",
+    val foods: MutableList<FoodDomain>?
+) {
 }
