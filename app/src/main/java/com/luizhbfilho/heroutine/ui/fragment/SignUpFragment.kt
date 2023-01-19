@@ -1,4 +1,6 @@
 package com.luizhbfilho.heroutine.ui.fragment
 
-class SignUpFragment {
+import androidx.fragment.app.Fragment
+
+class SignUpFragment: Fragment() {
 }

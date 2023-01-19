@@ -4,7 +4,7 @@ data class UserDomain(
     val id: Int,
     val name: String = "",
     val email: String = "",
-    val training: MutableList<TrainingDomain>?,
+    val workouts: MutableList<WorkoutDomain>?,
     val meals: MutableList<MealDomain>?
 ) {
 }
