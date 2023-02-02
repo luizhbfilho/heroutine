@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+
+    <style name="textInputLayoutStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox" />
+
+    <style name="textEditTextStyle">
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="saveButton" parent="Widget.Material3.Button.ElevatedButton" />
+</resources>

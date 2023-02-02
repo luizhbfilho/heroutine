@@ -14,4 +14,9 @@
     <string name="menuTitleWorkout">Workout</string>
     <string name="menuTitleDiet">Diet</string>
     <string name="menuTitleAccount">Account</string>
+    <string name="emailTextHint">Email</string>
+    <string name="passwordTextHint">Password</string>
+    <string name="forgotPasswordButtonText">Forgot password? Click here</string>
+    <string name="loginButtonText">LOGIN</string>
+    <string name="signUpButtonText">Tap here if you don\'t have an account</string>
 </resources>
