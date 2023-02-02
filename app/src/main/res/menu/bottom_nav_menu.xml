@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_my_day"
+        android:icon="@drawable/ic_star_24"
+        android:title="My Day" />
 
-</LinearLayout>
+    <item
+        android:id="@+id/navigation_workout"
+        android:icon="@drawable/ic_run_24"
+        android:title="Workout" />
+
+    <item
+        android:id="@+id/navigation_diet"
+        android:icon="@drawable/ic_diet_24"
+        android:title="My Day" />
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_account_24"
+        android:title="Account" />
+
+</menu>

@@ -1,4 +1,4 @@
-package com.luizhbfilho.heroutine.ui.fragment
+package com.luizhbfilho.heroutine.ui.fragment.diet
 
 import androidx.fragment.app.Fragment
 
