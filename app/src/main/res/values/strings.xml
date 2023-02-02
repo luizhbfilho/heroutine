@@ -10,4 +10,8 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="signInText">Heroutine</string>
+    <string name="menuTitleMyDay">My Day</string>
+    <string name="menuTitleWorkout">Workout</string>
+    <string name="menuTitleDiet">Diet</string>
+    <string name="menuTitleAccount">Account</string>
 </resources>

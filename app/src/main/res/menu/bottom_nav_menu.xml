@@ -3,21 +3,21 @@
     <item
         android:id="@+id/navigation_my_day"
         android:icon="@drawable/ic_star_24"
-        android:title="My Day" />
+        android:title="@string/menuTitleMyDay" />
 
     <item
         android:id="@+id/navigation_workout"
         android:icon="@drawable/ic_run_24"
-        android:title="Workout" />
+        android:title="@string/menuTitleWorkout" />
 
     <item
         android:id="@+id/navigation_diet"
         android:icon="@drawable/ic_diet_24"
-        android:title="My Day" />
+        android:title="@string/menuTitleDiet" />
 
     <item
         android:id="@+id/navigation_account"
         android:icon="@drawable/ic_account_24"
-        android:title="Account" />
+        android:title="@string/menuTitleAccount" />
 
 </menu>
