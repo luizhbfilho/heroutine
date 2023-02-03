@@ -1,16 +1,16 @@
-package com.luizhbfilho.heroutine.ui.activity
+package com.luizhbfilho.heroutine.ui.activity.login
 
 import android.os.Bundle
 import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 
-class SignInActivity: AppCompatActivity() {
+class SignUpActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
     }
 
-    private fun firebaseLogin(){
+    private fun createNewFirebaseUser(){
 
     }
 }

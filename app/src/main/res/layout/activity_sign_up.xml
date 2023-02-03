@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".ui.activity.SignUpActivity">
+    tools:context=".ui.activity.login.SignUpActivity">
 
     <TextView
         android:id="@+id/signUpTitleTextView"
@@ -30,7 +30,7 @@
         android:layout_marginLeft="48dp"
         android:layout_marginTop="72dp"
         android:layout_marginRight="48dp"
-        android:hint="Username"
+        android:hint="@string/usernameTextHint"
         app:layout_constraintEnd_toEndOf="@id/signUpTitleTextView"
         app:layout_constraintStart_toStartOf="@id/signUpTitleTextView"
         app:layout_constraintTop_toBottomOf="@id/signUpTitleTextView"
@@ -52,7 +52,7 @@
         android:layout_marginLeft="48dp"
         android:layout_marginTop="16dp"
         android:layout_marginRight="48dp"
-        android:hint="Enter your best email"
+        android:hint="@string/enterEmailTextHint"
         app:layout_constraintEnd_toEndOf="@id/enterUsernameTextInputLayout"
         app:layout_constraintStart_toStartOf="@id/enterUsernameTextInputLayout"
         app:layout_constraintTop_toBottomOf="@id/enterUsernameTextInputLayout"

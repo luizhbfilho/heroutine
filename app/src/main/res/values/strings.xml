@@ -23,4 +23,6 @@
     <string name="createPasswordText">Create your password</string>
     <string name="confirmPasswordText">Confirm password</string>
     <string name="createAccountButtonText">Create account</string>
+    <string name="usernameTextHint">Username</string>
+    <string name="enterEmailTextHint">Enter your best email</string>
 </resources>
