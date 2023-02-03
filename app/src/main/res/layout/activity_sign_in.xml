@@ -12,7 +12,7 @@
         style="@style/AppTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="250dp"
         android:fontFamily="@font/archivo_black"
         android:text="@string/signInText"
         android:textSize="64sp"
