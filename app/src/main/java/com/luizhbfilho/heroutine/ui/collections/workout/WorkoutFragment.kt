@@ -1,4 +1,4 @@
-package com.luizhbfilho.heroutine.ui.fragment.workout
+package com.luizhbfilho.heroutine.ui.collections.workout
 
 import androidx.fragment.app.Fragment
 

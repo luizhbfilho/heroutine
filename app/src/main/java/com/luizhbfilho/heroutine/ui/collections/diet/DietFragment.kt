@@ -1,4 +1,4 @@
-package com.luizhbfilho.heroutine.ui.fragment.diet
+package com.luizhbfilho.heroutine.ui.collections.diet
 
 import android.os.Bundle
 import android.view.LayoutInflater
