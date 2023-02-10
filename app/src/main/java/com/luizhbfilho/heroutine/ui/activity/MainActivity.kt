@@ -2,6 +2,7 @@ package com.luizhbfilho.heroutine.ui.activity
 
 import android.os.Bundle
 import android.os.PersistableBundle
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -33,6 +34,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_account
             )
         )
+
+        supportActionBar?.hide()
         setupActionBarWithNavController(navController, appBarConfiguration)
         bottomNavigationView.setupWithNavController(navController)
     }

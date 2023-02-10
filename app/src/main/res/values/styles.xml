@@ -8,4 +8,8 @@
     </style>
 
     <style name="saveButton" parent="Widget.Material3.Button.ElevatedButton" />
+
+    <style name="elevatedCardStyle" parent="Widget.Material3.CardView.Elevated">
+
+    </style>
 </resources>
