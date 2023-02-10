@@ -9,13 +9,13 @@
 
     <TextView
         android:id="@+id/appTextLogo"
-        style="@style/AppTheme"
+        style="@style/Theme.Heroutine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="250dp"
         android:fontFamily="@font/archivo_black"
         android:text="@string/signInText"
-        android:textSize="64sp"
+        android:textSize="52sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
