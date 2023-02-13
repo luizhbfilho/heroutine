@@ -1,6 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/newWorkoutTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center_horizontal"
+        android:text="New workout"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/workoutNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/defaultMargin"
+        android:background="@android:color/transparent"
+        android:hint="Workout's name"
+        android:padding="16dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newWorkoutTextView" />
+
+    <Button
+        android:id="@+id/dateButton"
+        style="@style/Widget.Material3.Button.IconButton.Outlined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/defaultMargin"
+        android:text="Pick a date"
+        app:icon="@drawable/ic_calendar_24"
+        app:layout_constraintEnd_toEndOf="@id/workoutNameEditText"
+        app:layout_constraintStart_toStartOf="@id/workoutNameEditText"
+        app:layout_constraintTop_toBottomOf="@id/workoutNameEditText" />
+
+    <TextView
+        android:id="@+id/addExercisesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center_horizontal"
+        android:text="List your exercises below"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/dateButton"
+        app:layout_constraintStart_toStartOf="@id/dateButton"
+        app:layout_constraintTop_toBottomOf="@id/dateButton" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/exerciseFormLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/addExercisesTextView">
+
+        <EditText
+            android:id="@+id/exerciseTextField"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:background="@android:color/transparent"
+            android:hint="Exercise"
+            android:padding="16dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@id/seriesTextField"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/seriesTextField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:background="@android:color/transparent"
+            android:hint="Series"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/repetitionsTextField"
+            app:layout_constraintStart_toEndOf="@id/exerciseTextField"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/repetitionsTextField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:background="@android:color/transparent"
+            android:hint="Reps"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/seriesTextField"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/forgotPasswordButton"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_add_24"
+        android:text="ADD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exerciseFormLayout" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
