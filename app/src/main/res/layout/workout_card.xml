@@ -7,16 +7,18 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardElevation="4dp">
-    
+
     <LinearLayout
+        android:id="@+id/baseWorkoutCardLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <CheckBox
+            android:id="@+id/isCompletedCheckBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"/>
+            android:layout_gravity="center_vertical" />
 
         <LinearLayout
             android:id="@+id/firstLayout"
@@ -74,17 +76,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
-                    android:text="View" />
+                    android:text="View"
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
         </LinearLayout>
 
-
-
     </LinearLayout>
-
-
 
 </com.google.android.material.card.MaterialCardView>
 

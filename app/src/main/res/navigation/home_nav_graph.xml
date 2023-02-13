@@ -17,15 +17,15 @@
         android:id="@+id/navigation_diet"
         android:name="com.luizhbfilho.heroutine.ui.collections.diet.DietFragment"
         android:label="My diet"
-        tools:layout="@layout/fragment_diet">
+        tools:layout="@layout/fragment_diet_list">
 
     </fragment>
 
     <fragment
         android:id="@+id/navigation_workout"
-        android:name="com.luizhbfilho.heroutine.ui.collections.workout.WorkoutFragment"
+        android:name="com.luizhbfilho.heroutine.ui.collections.workout.WorkoutListFragment"
         android:label="My workouts"
-        tools:layout="@layout/fragment_workout">
+        tools:layout="@layout/fragment_workout_list">
 
     </fragment>
 
