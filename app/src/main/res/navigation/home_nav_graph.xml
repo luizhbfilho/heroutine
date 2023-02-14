@@ -37,5 +37,13 @@
 
     </fragment>
 
+    <fragment
+        android:id="@+id/navigation_new_workout"
+        android:name="com.luizhbfilho.heroutine.ui.collections.workout.NewWorkoutFragment"
+        tools:layout="@layout/fragment_new_workout">
+
+
+    </fragment>
+
 
 </navigation>

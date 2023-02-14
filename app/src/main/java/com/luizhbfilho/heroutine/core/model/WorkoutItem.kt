@@ -1,4 +1,4 @@
-package com.luizhbfilho.heroutine.data.model
+package com.luizhbfilho.heroutine.core.model
 
 import com.google.firebase.Timestamp
 

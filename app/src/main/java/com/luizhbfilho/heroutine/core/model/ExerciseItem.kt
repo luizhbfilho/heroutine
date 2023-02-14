@@ -1,4 +1,4 @@
-package com.luizhbfilho.heroutine.data.model
+package com.luizhbfilho.heroutine.core.model
 
 data class ExerciseItem(
     val id: String? = null,
