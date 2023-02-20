@@ -27,6 +27,9 @@
         android:label="My workouts"
         tools:layout="@layout/fragment_workout_list">
 
+        <action
+            android:id="@+id/action_workout_list_to_new_workout"
+            app:destination="@id/navigation_new_workout" />
     </fragment>
 
     <fragment

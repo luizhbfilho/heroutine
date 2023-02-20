@@ -5,11 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.luizhbfilho.heroutine.databinding.FragmentDietBinding
+import com.luizhbfilho.heroutine.databinding.FragmentDietListBinding
 
 class DietFragment: Fragment() {
 
-    private var _binding: FragmentDietBinding? = null
+    private var _binding: FragmentDietListBinding? = null
 
     private val binding get() = _binding!!
 

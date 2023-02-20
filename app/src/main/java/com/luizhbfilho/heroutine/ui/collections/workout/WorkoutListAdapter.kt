@@ -27,11 +27,10 @@ class WorkoutListAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val binding = WorkoutItemBinding.inflate(layoutInflater, parent, false)
+        return ViewHolder(binding, viewModel)
     }
 
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
-    }
+    override fun getItemCount(): Int = asyncListDiffer.currentList.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         TODO("Not yet implemented")
@@ -43,7 +42,7 @@ class WorkoutListAdapter(
         }
 
         override fun areContentsTheSame(oldItem: WorkoutItem, newItem: WorkoutItem): Boolean {
-            return oldItem
+            return oldItem.description == newItem.description
         }
 
     }
