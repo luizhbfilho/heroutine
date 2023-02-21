@@ -3,7 +3,6 @@ package com.luizhbfilho.heroutine.data.repository
 import com.luizhbfilho.heroutine.core.model.WorkoutItem
 
 interface WorkoutRepository {
-
     suspend fun fetchWorkoutOfTheDay(dayOfWeek: Int): WorkoutItem
 
     suspend fun fetchAllWorkouts(): List<WorkoutItem>
