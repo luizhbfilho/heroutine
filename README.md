@@ -17,7 +17,7 @@ Através do Heroutine você será capaz de registrar suas refeições e treinos 
 
 ## :camera: Imagens
 
-## :wrench: Tecnologias utilizadas
+## :wrench: Tecnologias
 
 - Android Studio
 - Kotlin
