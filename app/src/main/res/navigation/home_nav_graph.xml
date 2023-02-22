@@ -45,7 +45,6 @@
         android:name="com.luizhbfilho.heroutine.ui.collections.workout.NewWorkoutFragment"
         tools:layout="@layout/fragment_new_workout">
 
-
     </fragment>
 
 
