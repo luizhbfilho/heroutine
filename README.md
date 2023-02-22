@@ -7,7 +7,7 @@
 - [:wrench: Tecnologias utilizadas](#wrench-tecnologias-utilizadas)
 - [:man\_technologist: Dev](#man_technologist-dev)
 
-## :pushpin: Motivação
+## :pushpin: Objetivo
 
 O projeto foi idealizado para ajudar pessoas a organizarem suas rotinas de exercícios e refeições em um único app e constantemente acompanhar sua evolução.
 
@@ -15,9 +15,9 @@ O projeto foi idealizado para ajudar pessoas a organizarem suas rotinas de exerc
 
 Através do Heroutine você será capaz de registrar suas refeições e treinos específicos para cada dia da semana, acompanhar sua evolução com o passar do tempo e ser lembrado de fazer o que precisa ser feito.
 
-## :camera: Imagens finais
+## :camera: Imagens
 
-## :wrench: Tecnologias utilizadas
+## :wrench: Tecnologias
 
 - Android Studio
 - Kotlin
