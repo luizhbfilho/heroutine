@@ -1,7 +1,6 @@
-package com.luizhbfilho.heroutine.ui.collections.workout
+package com.luizhbfilho.heroutine.ui.screens.workout
 
 import androidx.lifecycle.DefaultLifecycleObserver
-import androidx.lifecycle.LifecycleOwner
 
 class WorkoutListLifecycleObserver(
     private val viewModel: WorkoutListViewModel

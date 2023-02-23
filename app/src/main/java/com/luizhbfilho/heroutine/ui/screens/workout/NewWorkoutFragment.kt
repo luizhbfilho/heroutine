@@ -1,31 +1,27 @@
-package com.luizhbfilho.heroutine.ui.collections.workout
+package com.luizhbfilho.heroutine.ui.screens.workout
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
-import com.luizhbfilho.heroutine.R
-import com.luizhbfilho.heroutine.databinding.FragmentWorkoutListBinding
+import com.luizhbfilho.heroutine.databinding.FragmentNewWorkoutBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class WorkoutListFragment : Fragment() {
+class NewWorkoutDialogFragment: Fragment() {
 
-    private var _binding: FragmentWorkoutListBinding? = null
+    private var _binding: FragmentNewWorkoutBinding? = null
 
     private val binding get() = _binding!!
 
-    private lateinit var adapter: WorkoutListAdapter
-
-    private lateinit var viewModel: WorkoutListViewModel
+    private lateinit var viewModel: NewWorkoutViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        viewModel = ViewModelProvider(this)[WorkoutListViewModel::class.java]
+        viewModel = ViewModelProvider(this)[NewWorkoutViewModel::class.java]
     }
 
     override fun onCreateView(
@@ -33,15 +29,12 @@ class WorkoutListFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentWorkoutListBinding.inflate(inflater, container, false)
+        _binding = FragmentNewWorkoutBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.addWorkoutButton.setOnClickListener{
-            findNavController().navigate(R.id.action_workout_list_to_new_workout)
-        }
     }
 
     override fun onDestroyView() {

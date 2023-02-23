@@ -1,4 +1,4 @@
-package com.luizhbfilho.heroutine.ui.collections.account
+package com.luizhbfilho.heroutine.ui.screens.account
 
 import androidx.fragment.app.Fragment
 

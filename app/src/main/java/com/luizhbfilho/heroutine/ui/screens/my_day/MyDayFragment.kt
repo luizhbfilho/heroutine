@@ -1,4 +1,4 @@
-package com.luizhbfilho.heroutine.ui.collections.my_day
+package com.luizhbfilho.heroutine.ui.screens.my_day
 
 import androidx.fragment.app.Fragment
 

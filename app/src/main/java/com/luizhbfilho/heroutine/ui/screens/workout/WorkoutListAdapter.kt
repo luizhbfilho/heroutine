@@ -1,4 +1,4 @@
-package com.luizhbfilho.heroutine.ui.collections.workout
+package com.luizhbfilho.heroutine.ui.screens.workout
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
