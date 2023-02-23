@@ -1,7 +1,7 @@
 # Heroutine
 
 ## :blue_book: Tópicos
-- [:pushpin: Motivação](#pushpin-motivação)
+- [:pushpin: Objetivo](#pushpin-objetivo)
 - [:slightly_smiling_face: Sobre o projeto](#slightly_smiling_face-sobre-o-projeto)
 - [:camera: Imagens finais](#camera-imagens-finais)
 - [:wrench: Tecnologias utilizadas](#wrench-tecnologias-utilizadas)
