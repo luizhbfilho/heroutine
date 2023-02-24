@@ -30,10 +30,10 @@ class MainActivity : AppCompatActivity() {
 
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_my_day,
-                R.id.navigation_diet,
-                R.id.navigation_workout,
-                R.id.navigation_account
+                R.id.my_day,
+                R.id.diet,
+                R.id.workout,
+                R.id.account
             )
         )
 
