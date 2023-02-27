@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/accountFragment"
-        android:name="com.luizhbfilho.heroutine.ui.screens.account.AccountFragment"
+        android:name="com.luizhbfilho.heroutine.ui.feature.account.AccountFragment"
         tools:layout="@layout/fragment_account"></fragment>
 
 </navigation>

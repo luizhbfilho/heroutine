@@ -1,4 +1,4 @@
-package com.luizhbfilho.heroutine.data.repository
+package com.luizhbfilho.heroutine.core.data.repository
 
 import com.luizhbfilho.heroutine.core.model.WorkoutItem
 

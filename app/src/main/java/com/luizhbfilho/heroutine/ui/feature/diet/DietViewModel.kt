@@ -1,4 +1,4 @@
-package com.luizhbfilho.heroutine.ui.screens.diet
+package com.luizhbfilho.heroutine.ui.feature.diet
 
 import androidx.lifecycle.ViewModel
 

@@ -1,4 +1,4 @@
-package com.luizhbfilho.heroutine.ui.screens.workout
+package com.luizhbfilho.heroutine.ui.feature.workout
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel

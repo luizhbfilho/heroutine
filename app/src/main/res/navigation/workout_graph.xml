@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/workoutFragment"
-        android:name="com.luizhbfilho.heroutine.ui.screens.workout.WorkoutListFragment"
+        android:name="com.luizhbfilho.heroutine.ui.feature.workout.WorkoutListFragment"
         tools:layout="@layout/fragment_workout_list">
     </fragment>
 
