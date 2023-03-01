@@ -38,8 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="@dimen/defaultMargin"
-        android:text="Pick a date"
-        app:icon="@drawable/ic_calendar_24"
+        android:text="Pick a time"
+        app:icon="@drawable/ic_time_24"
         app:layout_constraintEnd_toEndOf="@id/workoutNameEditText"
         app:layout_constraintStart_toStartOf="@id/workoutNameEditText"
         app:layout_constraintTop_toBottomOf="@id/workoutNameEditText" />
@@ -108,7 +108,7 @@
 
 
     <Button
-        android:id="@+id/forgotPasswordButton"
+        android:id="@+id/confirmAddButton"
         style="@style/Widget.Material3.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

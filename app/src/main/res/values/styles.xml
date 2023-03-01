@@ -5,9 +5,13 @@
 
     <style name="textEditTextStyle">
         <item name="android:textCursorDrawable">@null</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
     </style>
 
-    <style name="saveButton" parent="Widget.Material3.Button.ElevatedButton" />
+    <style name="saveButton" parent="Widget.Material3.Button.ElevatedButton">
+        <item name="android:backgroundTint">@color/md_theme_light_primary</item>
+        <item name="android:textColor">@color/md_theme_light_background</item>
+    </style>
 
     <style name="elevatedCardStyle" parent="Widget.Material3.CardView.Elevated">
 

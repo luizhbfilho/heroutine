@@ -11,7 +11,9 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.luizhbfilho.heroutine.R
 import com.luizhbfilho.heroutine.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -28,10 +30,10 @@ class MainActivity : AppCompatActivity() {
 
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_my_day,
-                R.id.navigation_diet,
-                R.id.navigation_workout,
-                R.id.navigation_account
+                R.id.my_day,
+                R.id.diet,
+                R.id.workout,
+                R.id.account
             )
         )
 

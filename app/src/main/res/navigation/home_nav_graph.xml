@@ -1,41 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/home_nav_graph"
-    app:startDestination="@id/navigation_my_day">
+    app:startDestination="@id/my_day">
 
-    <fragment
-        android:id="@+id/navigation_my_day"
-        android:name="com.luizhbfilho.heroutine.ui.collections.my_day.MyDayFragment"
-        android:label="My Day"
-        tools:layout="@layout/fragment_my_day">
-
-    </fragment>
-
-    <fragment
-        android:id="@+id/navigation_diet"
-        android:name="com.luizhbfilho.heroutine.ui.collections.diet.DietFragment"
-        android:label="My diet"
-        tools:layout="@layout/fragment_diet_list">
-
-    </fragment>
-
-    <fragment
-        android:id="@+id/navigation_workout"
-        android:name="com.luizhbfilho.heroutine.ui.collections.workout.WorkoutListFragment"
-        android:label="My workouts"
-        tools:layout="@layout/fragment_workout_list">
-
-    </fragment>
-
-    <fragment
-        android:id="@+id/navigation_account"
-        android:name="com.luizhbfilho.heroutine.ui.collections.account.AccountFragment"
-        android:label="My account"
-        tools:layout="@layout/fragment_account">
-
-    </fragment>
-
+    <include app:graph="@navigation/my_day_graph" />
+    <include app:graph="@navigation/workout_graph" />
+    <include app:graph="@navigation/diet_graph" />
+    <include app:graph="@navigation/account_graph" />
 
 </navigation>
