@@ -18,54 +18,77 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1"/>
+        app:layout_constraintVertical_bias="0.1" />
 
-<!--    <com.google.android.material.textfield.TextInputLayout-->
-<!--        android:id="@+id/emailTextInputLayout"-->
-<!--        style="@style/textInputLayoutStyle"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="24dp"-->
-<!--        android:hint="@string/emailTextHint"-->
-<!--        app:layout_constraintEnd_toEndOf="@id/logoImageView"-->
-<!--        app:layout_constraintStart_toStartOf="@id/logoImageView"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/logoImageView"-->
-<!--        app:startIconDrawable="@drawable/ic_email_24">-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailInputLayout"
+        style="@style/textInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="@string/emailTextHint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:startIconDrawable="@drawable/ic_email_alternative_24">
 
-<!--        <com.google.android.material.textfield.TextInputEditText-->
-<!--            android:id="@+id/emailTextInputEditText"-->
-<!--            style="@style/textEditTextStyle"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:fontFamily="@font/poppins_semibold"-->
-<!--            android:inputType="textEmailAddress" />-->
-<!--    </com.google.android.material.textfield.TextInputLayout>-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEditText"
+            style="@style/textEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInputLayout"
+        style="@style/textInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="@string/passwordTextHint_pt_br"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailInputLayout"
+        app:startIconDrawable="@drawable/ic_lock_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            style="@style/textEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
-<!--    <Button-->
-<!--        android:id="@+id/forgotPasswordButton"-->
-<!--        style="@style/Widget.Material3.Button.TextButton"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="2dp"-->
-<!--        android:text="@string/forgotPasswordButtonText"-->
-<!--        app:layout_constraintEnd_toEndOf="@id/emailTextInputLayout"-->
-<!--        app:layout_constraintStart_toStartOf="@id/emailTextInputLayout"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/emailTextInputLayout" />-->
+    <Button
+        android:id="@+id/forgotPasswordButton"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/forgotPasswordTextButton_pt_br"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordInputLayout" />
 
     <Button
         android:id="@+id/loginButton"
         style="@style/saveButton"
-        android:layout_width="@dimen/defaultConfirmButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:contentDescription=""
         android:text="@string/loginButtonText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.9"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

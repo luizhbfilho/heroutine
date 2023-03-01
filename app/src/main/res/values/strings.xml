@@ -25,4 +25,6 @@
     <string name="createAccountButtonText">Create account</string>
     <string name="usernameTextHint">Username</string>
     <string name="enterEmailTextHint">Enter your best email</string>
+    <string name="passwordTextHint_pt_br">Senha</string>
+    <string name="forgotPasswordTextButton_pt_br">Esqueceu sua senha? Clique aqui</string>
 </resources>
