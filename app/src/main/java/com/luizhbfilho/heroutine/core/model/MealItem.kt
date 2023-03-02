@@ -3,11 +3,11 @@ package com.luizhbfilho.heroutine.core.model
 import java.sql.Timestamp
 
 data class MealItem(
-    val id: String? = null,
-    val userId: String? = null,
-    var name: String? = null,
-    var description: String? = null,
-    var isCompleted: Boolean? = null,
+    val id: String? = "",
+    val userId: String? = "",
+    var name: String? = "",
+    var description: String? = "",
+    var isCompleted: Boolean? = false,
     var dueDate: Timestamp? = null,
     var foods: MutableList<FoodItem>? = null,
 )

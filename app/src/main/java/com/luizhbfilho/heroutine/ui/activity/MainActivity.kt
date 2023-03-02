@@ -1,8 +1,6 @@
 package com.luizhbfilho.heroutine.ui.activity
 
 import android.os.Bundle
-import android.os.PersistableBundle
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -24,21 +22,21 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val bottomNavigationView: BottomNavigationView = binding.bottomNavigationView
-
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
-
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.my_day,
-                R.id.diet,
-                R.id.workout,
-                R.id.account
-            )
-        )
-
-        supportActionBar?.hide()
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        bottomNavigationView.setupWithNavController(navController)
+//        val bottomNavigationView: BottomNavigationView = binding.bottomNavigationView
+//
+//        val navController = findNavController(R.id.nav_host_fragment_activity_main)
+//
+//        val appBarConfiguration = AppBarConfiguration(
+//            setOf(
+//                R.id.my_day,
+//                R.id.diet,
+//                R.id.workout,
+//                R.id.account
+//            )
+//        )
+//
+//        supportActionBar?.hide()
+//        setupActionBarWithNavController(navController)
+//        bottomNavigationView.setupWithNavController(navController)
     }
 }

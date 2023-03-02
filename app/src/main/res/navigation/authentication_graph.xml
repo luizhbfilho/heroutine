@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/authentication_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authentication_graph"
+    app:startDestination="@id/fragment_get_started">
 
     <fragment
         android:id="@+id/fragment_get_started"
         android:name="com.luizhbfilho.heroutine.ui.feature.start.GetStartedFragment"
-        android:label="GetStartedFragment">
+        android:label="GetStartedFragment"
+        tools:layout="@layout/fragment_get_started">
         <action
             android:id="@+id/action_getStartedFragment_to_sign_in_activity"
             app:destination="@id/signInFragment" />
@@ -17,11 +20,13 @@
 
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.luizhbfilho.heroutine.ui.feature.start.SignInFragment" />
+        android:name="com.luizhbfilho.heroutine.ui.feature.start.SignInFragment"
+        tools:layout="@layout/fragment_sign_in" />
 
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.luizhbfilho.heroutine.ui.feature.start.SignUpFragment">
+        android:name="com.luizhbfilho.heroutine.ui.feature.start.SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
         <action
             android:id="@+id/action_sign_up_activity_to_sign_in_activity"
             app:destination="@id/signInFragment" />
