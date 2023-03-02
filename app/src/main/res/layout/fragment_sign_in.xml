@@ -7,7 +7,7 @@
     android:fillViewport="true"
     android:orientation="vertical"
     android:paddingHorizontal="24dp"
-    tools:context=".ui.activity.login.SignInActivity">
+    tools:context=".ui.feature.start.SignInFragment">
 
     <ImageView
         android:id="@+id/logoImageView"

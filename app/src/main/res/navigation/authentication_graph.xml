@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/authentication_graph">
+
+    <fragment
+        android:id="@+id/fragment_get_started"
+        android:name="com.luizhbfilho.heroutine.ui.feature.start.GetStartedFragment"
+        android:label="GetStartedFragment">
+        <action
+            android:id="@+id/action_getStartedFragment_to_sign_in_activity"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_getStartedFragment_to_sign_up_activity"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.luizhbfilho.heroutine.ui.feature.start.SignInFragment" />
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.luizhbfilho.heroutine.ui.feature.start.SignUpFragment">
+        <action
+            android:id="@+id/action_sign_up_activity_to_sign_in_activity"
+            app:destination="@id/signInFragment" />
+    </fragment>
+
+</navigation>
