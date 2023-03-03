@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.luizhbfilho.heroutine.R
 import com.luizhbfilho.heroutine.databinding.FragmentGetStartedBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -26,6 +28,9 @@ class GetStartedFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentGetStartedBinding.inflate(inflater, container, false)
+        binding.signUpButton.setOnClickListener {
+            findNavController().navigate(R.id.action_getStartedFragment_to_sign_up_fragment)
+        }
         return binding.root
     }
 

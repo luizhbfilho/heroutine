@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/start_graph" />
+        app:navGraph="@navigation/authentication_graph" />
 
 
     <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
