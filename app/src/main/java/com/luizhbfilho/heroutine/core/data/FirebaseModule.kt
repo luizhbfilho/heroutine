@@ -1,4 +1,4 @@
-package com.luizhbfilho.heroutine.core
+package com.luizhbfilho.heroutine.core.data
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
