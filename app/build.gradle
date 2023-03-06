@@ -49,12 +49,11 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     // Navigation
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation libs.bundles.navigation
 
     // Dependency Injection - Dagger Hilt
-    implementation "com.google.dagger:hilt-android:$hilt_version"
-    kapt "com.google.dagger:hilt-compiler:$hilt_version"
+    implementation libs.hilt.android
+    kapt libs.hilt.compiler
 
     // Firebase
     implementation 'com.google.firebase:firebase-analytics:21.2.0'

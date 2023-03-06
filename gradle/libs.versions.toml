@@ -1,0 +1,22 @@
+[versions]
+hiltVersion = "2.44"
+navigationVersion = "2.5.3"
+gradleVersion = "7.4.1"
+kotlinVersion = "1.7.21"
+googleServicesVersion = "4.3.13"
+
+[libraries]
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltVersion"}
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltVersion"}
+androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationVersion"}
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationVersion"}
+
+[bundles]
+navigation = ["androidx-navigation-fragment-ktx", "androidx-navigation-ui-ktx"]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "gradleVersion" }
+android-library = { id = "com.android.library", version.ref = "gradleVersion" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinVersion" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlinVersion" }
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServicesVersion"}
