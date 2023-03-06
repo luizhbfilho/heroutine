@@ -39,14 +39,12 @@ android {
 
 
 dependencies {
-    def hilt_version = "2.44"
-    def material_version = "1.7.0"
+    implementation libs.androidx.core
+    implementation libs.androix.appcompat
+    implementation libs.constraint.layout
 
-    implementation 'androidx.core:core-ktx:+'
-    implementation 'androidx.core:core-ktx:1.9.0'
-    implementation 'androidx.appcompat:appcompat:1.6.0'
-    implementation "com.google.android.material:material:$material_version"
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    // Material Design
+    implementation libs.material.design
 
     // Navigation
     implementation libs.bundles.navigation
@@ -56,17 +54,11 @@ dependencies {
     kapt libs.hilt.compiler
 
     // Firebase
-    implementation 'com.google.firebase:firebase-analytics:21.2.0'
-    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
-    implementation 'com.google.firebase:firebase-firestore-ktx:24.4.1'
-    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.2.9'
-    implementation platform('com.google.firebase:firebase-bom:31.2.0')
-    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation libs.bundles.firebase
 
     // Tests
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    testImplementation libs.tests.junit
+    androidTestImplementation libs.bundles.android.tests
 }
 
 kapt {
