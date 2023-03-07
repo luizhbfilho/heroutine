@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace 'com.luizhbfilho.heroutine'
-    compileSdk 33
+    compileSdk rootProject.ext.sdkVersion
 
     defaultConfig {
         applicationId "com.luizhbfilho.heroutine"
-        minSdk 26
-        targetSdk 33
+        minSdk rootProject.ext.minSdk
+        targetSdk rootProject.ext.targetVersion
         versionCode 1
         versionName "1.0"
 
@@ -30,7 +30,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = JavaVersion.VERSION_1_8
     }
     buildFeatures {
         viewBinding true
@@ -39,6 +39,8 @@ android {
 
 
 dependencies {
+    implementation project(":core:data")
+
     implementation libs.androidx.core
     implementation libs.androix.appcompat
     implementation libs.constraint.layout
@@ -52,6 +54,9 @@ dependencies {
     // Dependency Injection - Dagger Hilt
     implementation libs.hilt.android
     kapt libs.hilt.compiler
+
+    // Coroutines
+    implementation libs.kotlinx.coroutines
 
     // Firebase
     implementation libs.bundles.firebase

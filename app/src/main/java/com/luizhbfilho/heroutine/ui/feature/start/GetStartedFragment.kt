@@ -19,7 +19,6 @@ class GetStartedFragment : Fragment() {
 
     private val binding get() = _binding!!
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -38,6 +37,9 @@ class GetStartedFragment : Fragment() {
         val fragmentManager: FragmentManager = requireActivity().supportFragmentManager
         binding.signUpButton.setOnClickListener {
             findNavController().navigate(R.id.action_getStartedFragment_to_sign_up_fragment)
+        }
+        binding.signInButton.setOnClickListener {
+            findNavController().navigate(R.id.action_getStartedFragment_to_sign_in_fragment)
         }
     }
 

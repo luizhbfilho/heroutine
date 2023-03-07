@@ -2,7 +2,7 @@ package com.luizhbfilho.heroutine.core.data.repository
 
 import com.luizhbfilho.heroutine.core.model.WorkoutItem
 
-interface WorkoutRepository {
+interface WorkoutFirestoreRepository {
     suspend fun fetchWorkoutOfTheDay(dayOfWeek: Int): WorkoutItem
 
     suspend fun fetchAllWorkouts(): List<WorkoutItem>

@@ -4,7 +4,8 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.luizhbfilho.heroutine.core.model.WorkoutItem
 
-class WorkoutFirestoreRepository: WorkoutRepository {
+class WorkoutFirestoreRepositoryImpl :
+    WorkoutFirestoreRepository {
 
     private val database = Firebase.firestore
     override suspend fun fetchWorkoutOfTheDay(dayOfWeek: Int): WorkoutItem {
