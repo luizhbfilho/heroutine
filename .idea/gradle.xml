@@ -13,6 +13,11 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/core/data" />
+            <option value="$PROJECT_DIR$/features" />
+            <option value="$PROJECT_DIR$/features/authentication" />
+            <option value="$PROJECT_DIR$/features/diet" />
+            <option value="$PROJECT_DIR$/features/start" />
+            <option value="$PROJECT_DIR$/features/workout" />
           </set>
         </option>
       </GradleProjectSettings>

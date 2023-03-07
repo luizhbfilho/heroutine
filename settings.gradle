@@ -18,3 +18,8 @@ enableFeaturePreview("VERSION_CATALOGS")
 rootProject.name = "Heroutine"
 include ':app'
 include ':core:data'
+include ':features'
+include ':features:start'
+include ':features:workout'
+include ':features:diet'
+include ':features:authentication'
