@@ -1,0 +1,49 @@
+[versions]
+materialVersion = "1.7.0"
+hiltVersion = "2.44"
+navigationVersion = "2.5.3"
+gradleVersion = "7.4.1"
+kotlinVersion = "1.7.21"
+googleServicesVersion = "4.3.13"
+firebaseAnalyticsVersion = "21.2.0"
+firebaseAuthVersion = "21.1.0"
+firebaseFirestoreVersion = "24.4.1"
+firebaseCrashlyticsVersion = "18.2.9"
+firebaseBomVersion = "31.2.0"
+coreVersion = "1.9.0"
+constraintLayoutVersion = "2.1.4"
+appcompatVersion = "1.6.0"
+junitVersion = "4.13.2"
+junitExtVersion = "1.1.4"
+espressoCoreVersion = "3.5.0"
+
+[libraries]
+androidx-core = { module = "androidx.core:core-ktx", version.ref = "coreVersion"}
+constraint-layout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintLayoutVersion"}
+androix-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion"}
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltVersion"}
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltVersion"}
+androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationVersion"}
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationVersion"}
+firebase-analytics = { module = "com.google.firebase:firebase-analytics", version.ref = "firebaseAnalyticsVersion"}
+firebase-auth = { module = "com.google.firebase:firebase-auth-ktx", version.ref = "firebaseAuthVersion"}
+firebase-firestore = { module = "com.google.firebase:firebase-firestore-ktx", version.ref = "firebaseFirestoreVersion"}
+firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics-ktx", version.ref = "firebaseCrashlyticsVersion"}
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBomVersion"}
+firebase-analytics-ktx = { module = "com.google.firebase:firebase-analytics-ktx", version.ref = "firebaseAnalyticsVersion"}
+material-design = { module = "com.google.android.material:material", version.ref = "materialVersion"}
+tests-junit = { module = "junit:junit", version.ref = "junitVersion"}
+android-tests-junit-ext = { module = "androidx.test.ext:junit", version.ref = "junitExtVersion"}
+android-tests-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion"}
+
+[bundles]
+navigation = ["androidx-navigation-fragment-ktx", "androidx-navigation-ui-ktx"]
+firebase = ["firebase-analytics", "firebase-auth", "firebase-firestore", "firebase-crashlytics", "firebase-bom", "firebase-analytics-ktx"]
+android-tests = ["android-tests-junit-ext", "android-tests-espresso-core"]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "gradleVersion" }
+android-library = { id = "com.android.library", version.ref = "gradleVersion" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinVersion" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlinVersion" }
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServicesVersion"}

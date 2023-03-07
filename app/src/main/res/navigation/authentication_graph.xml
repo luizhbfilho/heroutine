@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authentication_graph"
+    app:startDestination="@id/fragment_get_started">
+
+    <include app:graph="@navigation/home_nav_graph" />
+
+    <fragment
+        android:id="@+id/fragment_get_started"
+        android:name="com.luizhbfilho.heroutine.ui.feature.start.GetStartedFragment"
+        android:label="GetStartedFragment"
+        tools:layout="@layout/fragment_get_started">
+        <action
+            android:id="@+id/action_getStartedFragment_to_sign_in_fragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_getStartedFragment_to_sign_up_fragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.luizhbfilho.heroutine.ui.feature.start.SignInFragment"
+        tools:layout="@layout/fragment_sign_in">
+
+        <action
+            android:id="@+id/action_succesfull_signIn_to_Home"
+            app:destination="@+id/home_nav_graph" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.luizhbfilho.heroutine.ui.feature.start.SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_sign_up_activity_to_sign_in_fragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+
+</navigation>
