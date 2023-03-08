@@ -1,4 +1,4 @@
-package com.luizhbfilho.heroutine.ui.feature.workout
+package com.luizhbfilho.heroutine.features.workout
 
 import androidx.lifecycle.DefaultLifecycleObserver
 

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="defaultConfirmButton">300dp</dimen>
     <dimen name="defaultMarginTop">16dp</dimen>
     <dimen name="defaultMargin">16dp</dimen>
     <dimen name="defaultSideMargin">20dp</dimen>

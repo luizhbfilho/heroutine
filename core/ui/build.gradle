@@ -4,12 +4,8 @@ plugins {
 }
 
 android {
-    namespace 'com.luizhbfilho.heroutine.features.diet'
+    namespace 'com.luizhbfilho.heroutine.core.ui'
     compileSdk rootProject.ext.sdkVersion
-
-    buildFeatures {
-        viewBinding true
-    }
 }
 
 dependencies {
