@@ -1,6 +1,6 @@
 package com.luizhbfilho.heroutine.core.data.repository
 
-import com.luizhbfilho.heroutine.core.model.WorkoutItem
+import com.luizhbfilho.heroutine.core.data.model.WorkoutItem
 
 interface WorkoutFirestoreRepository {
     suspend fun fetchWorkoutOfTheDay(dayOfWeek: Int): WorkoutItem

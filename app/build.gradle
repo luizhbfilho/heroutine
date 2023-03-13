@@ -39,11 +39,11 @@ android {
 
 
 dependencies {
-    implementation project(":core:data")
-    implementation project(":core:ui")
-    implementation project(":features:authentication")
-    implementation project(":features:workout")
-    implementation project(":features:diet")
+    implementation(project(":core:data"))
+    implementation(project(":core:ui"))
+    implementation(project(":features:authentication"))
+    implementation(project(":features:workout"))
+    implementation(project(":features:diet"))
 
     implementation libs.androidx.core
     implementation libs.androix.appcompat

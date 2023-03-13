@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "502218887859",
+    "firebase_url": "https://heroutine-default-rtdb.firebaseio.com",
     "project_id": "heroutine",
     "storage_bucket": "heroutine.appspot.com"
   },
@@ -14,7 +15,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "502218887859-upo0f74197n6ls0gv33hncbkj7ee97m0.apps.googleusercontent.com",
+          "client_id": "502218887859-gntqgpod8udcrd9rboqcc0d77i258g7q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.luizhbfilho.heroutine",
+            "certificate_hash": "43a04895268fd8d4d239ade940cd7fcd6404a7c6"
+          }
+        },
+        {
+          "client_id": "502218887859-if46n1gnd4gv37trc6gbj2cd2f02c4d3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -27,7 +36,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "502218887859-upo0f74197n6ls0gv33hncbkj7ee97m0.apps.googleusercontent.com",
+              "client_id": "502218887859-if46n1gnd4gv37trc6gbj2cd2f02c4d3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

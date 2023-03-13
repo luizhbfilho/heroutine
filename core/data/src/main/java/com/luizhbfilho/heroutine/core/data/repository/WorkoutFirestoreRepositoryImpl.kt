@@ -2,7 +2,7 @@ package com.luizhbfilho.heroutine.core.data.repository
 
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import com.luizhbfilho.heroutine.core.model.WorkoutItem
+import com.luizhbfilho.heroutine.core.data.model.WorkoutItem
 
 class WorkoutFirestoreRepositoryImpl :
     WorkoutFirestoreRepository {

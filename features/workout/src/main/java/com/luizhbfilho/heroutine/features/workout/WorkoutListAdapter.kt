@@ -5,13 +5,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.luizhbfilho.heroutine.core.data.model.WorkoutItem
 import com.luizhbfilho.heroutine.features.workout.databinding.WorkoutItemBinding
 
 class WorkoutListAdapter(
     private val viewModel: WorkoutListViewModel
 ) : RecyclerView.Adapter<WorkoutListAdapter.ViewHolder>() {
 
-    private val asyncListDiffer: AsyncListDiffer<com.luizhbfilho.heroutine.core.model.WorkoutItem> =
+    private val asyncListDiffer: AsyncListDiffer<WorkoutItem> =
         AsyncListDiffer(this, DiffCallback)
 
     class ViewHolder(
@@ -19,7 +20,7 @@ class WorkoutListAdapter(
         private val viewModel: WorkoutListViewModel
     ) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(workout: com.luizhbfilho.heroutine.core.model.WorkoutItem) {
+        fun bind(workout: WorkoutItem) {
 
         }
     }
@@ -37,17 +38,17 @@ class WorkoutListAdapter(
     }
 
     object DiffCallback :
-        DiffUtil.ItemCallback<com.luizhbfilho.heroutine.core.model.WorkoutItem>() {
+        DiffUtil.ItemCallback<WorkoutItem>() {
         override fun areItemsTheSame(
-            oldItem: com.luizhbfilho.heroutine.core.model.WorkoutItem,
-            newItem: com.luizhbfilho.heroutine.core.model.WorkoutItem
+            oldItem: WorkoutItem,
+            newItem: WorkoutItem
         ): Boolean {
             return oldItem.id == newItem.id
         }
 
         override fun areContentsTheSame(
-            oldItem: com.luizhbfilho.heroutine.core.model.WorkoutItem,
-            newItem: com.luizhbfilho.heroutine.core.model.WorkoutItem
+            oldItem: WorkoutItem,
+            newItem: WorkoutItem
         ): Boolean {
             return oldItem.description == newItem.description
         }

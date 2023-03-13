@@ -3,26 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/authentication_graph"
-    app:startDestination="@id/fragment_get_started">
-
-    <include app:graph="@navigation/home_nav_graph" />
+    app:startDestination="@id/activity_get_started">
 
     <fragment
-        android:id="@+id/fragment_get_started"
-        android:name="com.luizhbfilho.heroutine.ui.feature.start.GetStartedFragment"
+        android:id="@+id/activity_get_started"
+        android:name="com.luizhbfilho.heroutine.features.authentication.GetStartedFragment"
         android:label="GetStartedFragment"
         tools:layout="@layout/fragment_get_started">
         <action
             android:id="@+id/action_getStartedFragment_to_sign_in_fragment"
-            app:destination="@id/signInFragment" />
+            app:destination="@id/signInActivity" />
         <action
             android:id="@+id/action_getStartedFragment_to_sign_up_fragment"
-            app:destination="@id/signUpFragment" />
+            app:destination="@id/signUpActivity" />
     </fragment>
 
     <fragment
-        android:id="@+id/signInFragment"
-        android:name="com.luizhbfilho.heroutine.ui.feature.start.SignInFragment"
+        android:id="@+id/signInActivity"
+        android:name="com.luizhbfilho.heroutine.features.authentication.SignInActivity"
         tools:layout="@layout/fragment_sign_in">
 
         <action
@@ -31,12 +29,14 @@
     </fragment>
 
     <fragment
-        android:id="@+id/signUpFragment"
-        android:name="com.luizhbfilho.heroutine.ui.feature.start.SignUpFragment"
+        android:id="@+id/signUpActivity"
+        android:name="com.luizhbfilho.heroutine.features.authentication.SignUpActivity"
         tools:layout="@layout/fragment_sign_up">
         <action
             android:id="@+id/action_sign_up_activity_to_sign_in_fragment"
-            app:destination="@id/signInFragment" />
+            app:destination="@id/signInActivity" />
     </fragment>
+
+    <include app:graph="@navigation/home_nav_graph" />
 
 </navigation>
